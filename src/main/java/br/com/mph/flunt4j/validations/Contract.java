@@ -3,6 +3,8 @@ package br.com.mph.flunt4j.validations;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.apache.commons.lang3.StringUtils;
 
@@ -665,6 +667,17 @@ public class Contract extends Notifiable {
             addNotification(property, message);
 
         return this;
+    }
+    
+    public Contract matchRegex(String val, String strPattern, String property, String message)
+    {
+    	Pattern pattern = Pattern.compile(strPattern);
+    	Matcher matcher = pattern.matcher(val);
+    	if (!matcher.matches())
+    	{
+    		addNotification(property, message);
+    	}
+    	return this;
     }
 
 }

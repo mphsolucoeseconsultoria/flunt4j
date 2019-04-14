@@ -28,7 +28,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="src" output="target/classes" path="workspace/src/main/java">
+	<classpathentry kind="src" output="target/classes" path="Users/Ruben/git/src/main/java">
 		<attributes>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
